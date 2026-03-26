@@ -5,12 +5,12 @@ Tarea: Implementación de algoritmo genético que resuelve el Problema de la Moc
 Este proyecto es una implementación interactiva en Python que resuelve el clásico Problema de la Mochila 0/1 (Knapsack Problem) utilizando un Algoritmo Genético, 
 cuenta con una interfaz gráfica (GUI) hecha con tkinter que permite ajustar los hiperparámetros del motor evolutivo y visualizar el proceso de convergencia.
 
-El programa busca la combinación óptima de objetos de un inventario disponible para maximizar el valor total (en quetzales) introducido en una mochila, respetando un límite de peso estricto. 
-Dado que el espacio de búsqueda crece de forma exponencial (2^n combinaciones), el programa utiliza computación evolutiva para encontrar la solución óptima (o una muy cercana) evaluando solo una pequeña fracción de las posibilidades.
+El programa busca la combinación óptima de objetos de un inventario disponible para maximizar el valor total (en quetzales) introducido en una mochila, respetando un límite de peso estricto y
+dado que el espacio de búsqueda crece de forma exponencial (2^n combinaciones), el programa utiliza computación evolutiva para encontrar la solución óptima (o una muy cercana) evaluando solo una pequeña fracción de las posibilidades.
 
 El motor genético simula el proceso de selección natural:
 - Población Inicial: Genera soluciones candidatas (mochilas) con combinaciones de objetos al azar.
-- Evaluación (Fitness): Calcula el valor de cada mochila. Aplica una penalización matemática destructiva si la mochila excede la capacidad de peso máximo.
+- Evaluación (Fitness): Calcula el valor de cada mochila y aplica una penalización matemática si la mochila excede la capacidad de peso máximo.
 - Selección: Utiliza un sistema de "Torneo" para elegir a las mejores mochilas como padres.
 - Cruza y Mutación: Combina el contenido de las mochilas seleccionadas y realiza alteraciones aleatorias para crear una nueva generación de soluciones.
 - Elitismo: Protege a las mejores mochilas históricas para que no se pierdan en el proceso.
