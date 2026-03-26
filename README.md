@@ -2,8 +2,8 @@ Jonathan David Franco Sosa 1190-22-515 Curso: inteligencia artificial
 
 Tarea: Implementación de algoritmo genético que resuelve el Problema de la Mochila 0/1 (Knapsack Problem)
 
-Este proyecto es una implementación interactiva en Python que resuelve el clásico Problema de la Mochila 0/1 (Knapsack Problem) utilizando un Algoritmo Genético. 
-Cuenta con una interfaz gráfica (GUI) construida con tkinter que permite ajustar en tiempo real los hiperparámetros del motor evolutivo y visualizar el proceso de convergencia.
+Este proyecto es una implementación interactiva en Python que resuelve el clásico Problema de la Mochila 0/1 (Knapsack Problem) utilizando un Algoritmo Genético, 
+cuenta con una interfaz gráfica (GUI) hecha con tkinter que permite ajustar los hiperparámetros del motor evolutivo y visualizar el proceso de convergencia.
 
 El programa busca la combinación óptima de objetos de un inventario disponible para maximizar el valor total (en quetzales) introducido en una mochila, respetando un límite de peso estricto. 
 Dado que el espacio de búsqueda crece de forma exponencial (2^n combinaciones), el programa utiliza computación evolutiva para encontrar la solución óptima (o una muy cercana) evaluando solo una pequeña fracción de las posibilidades.
